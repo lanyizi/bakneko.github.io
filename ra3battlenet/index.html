@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)file:///D:/web%E8%84%9A%E6%9C%AC/WEB/login.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="./user.js"></script>
+    <title>注册账号</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+         
+        html {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+
+            background-image: url('./assets/sunsetting_billow.jpg') ;
+            background-size: 100vw 100vw;
+            background-position: center center;
+        }
+         
+        body {
+            height: 100%;
+        }
+         
+        #bg {
+            position: absolute;
+            width: 100%;
+            height:100%;
+            background-color: transparent;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #loginDiv {
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            background-color: rgba(75, 81, 95, 0.466);
+            box-shadow: 7px 7px 17px rgba(52, 56, 66, 0.5);
+            border-radius: 5px;
+        }
+         
+        #name_trip {
+            margin-left: 50px;
+            color: red;
+        }
+         
+        p {
+            margin-top: 30px;
+            margin-left: 20px;
+            color: azure;
+        }
+         
+        input {
+            margin-left: 15px;
+            border-radius: 5px;
+            border-style: hidden;
+            height: 30px;
+            width: 140px;
+            background-color: rgba(216, 191, 216, 0.5);
+            outline: none;
+            color: #f0edf3;
+            padding-left: 10px;
+        }
+         
+        .button {
+            border-color: cornsilk;
+            background-color: rgba(100, 149, 237, .7);
+            color: aliceblue;
+            border-style: hidden;
+            border-radius: 5px;
+            width: 100px;
+            height: 31px;
+            font-size: 16px;
+        }
+
+        #notice
+        {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: larger;
+            font-weight: bold;
+            color: white; 
+            background-color: rgba(75, 81, 95, 0.466);
+            box-shadow: 7px 7px 17px rgba(52, 56, 66, 0.5);
+            backdrop-filter: blur(10px);
+            border-radius: 5px;
+            padding: 7.5% 7.5%;
+            text-align: center;
+        }
+    </style>
+</head>
+ 
+<body>
+    <div id="bg">
+        <div id="loginDiv">
+            <form id="form" action="#">
+                <div id="notice">
+                    不好意思突然让这个服务提早面世了，目前还处于开发阶段。<br/>
+                    主要问题是服务器在香港 并不能保证稳定<br/>
+                    如果大家想测试目前当然是欢迎的 但是暂时实在是不能保证服务器稳定<br/>
+                    后续会使用更好的服务器提供服务，请大家谅解<br/>
+                    您可以在网站上注册账号用于测试，但是那些账号信息不会被保留，它们将会在我们正式公布的时候被删除。<br/>
+                    <br/>
+                    <button type="submit" class="button" onclick="closePopup()">
+                        关闭
+                    </button>
+                </div>
+                <h1 style="text-align: center;color: aliceblue;">注册账号</h1>
+                <p>用户名<input id="uname" type="text"><label id="uname_l"></label></p>
+     
+                <p>密码　<input id="pwd" type="password"><label id="pwd_l"></label></p>
+     
+                <div style="text-align: center;margin-top: 30px;">
+                    <input type="submit" class="button" onclick="onSubmit()" value="注册">
+                    <input type="reset" class="button" onclick="console.log('reset clicked!')" value="重置">
+                </div>
+            </form>
+        </div>
+    </div>
+</body></html>
+
