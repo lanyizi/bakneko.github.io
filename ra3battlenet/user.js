@@ -1,7 +1,8 @@
 async function requestRegister(uname, pwd) {
     req = new Request('http://122.9.150.12/user/create/', {
         method: 'POST', 
-        headers: {'Content-Type': 'application/json'}, 
+        headers: {'Content-Type': 'application/json'
+                ,'Access-Control-Allow-Origin': 'bakneko.com'}, 
         body: JSON.stringify({uname: uname, pwd: pwd})
     });
     res = await fetch(req);
