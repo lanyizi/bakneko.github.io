@@ -1,7 +1,7 @@
 {
-    "version": "1.0.2.2",
-    "url": "https://cowtransfer.com/s/73cd59575afe46",
-    "dllZipUrl": "https://bakneko.com/ra3battlenet/NativeDll1.0.2.2.zip",
-    "dllSha256": "ed0e795d79fd1904d6e366fcac87b664e97aca01db27383af1843187a45c52b5",
+    "version": "1.0.3.0",
+    "url": "https://cowtransfer.com/s/25e56d657a9149",
+    "dllZipUrl": "https://bakneko.com/ra3battlenet/NativeDll1.0.3.0.zip",
+    "dllSha256": "a5c3cbcdbb3ba68d25e15868badcdeb30bd4838daa284a30a2ef06b5864a6598",
     "minimumAllowedClientVersion" : "1.0.2.0"
 }
